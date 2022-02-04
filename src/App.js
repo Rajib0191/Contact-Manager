@@ -1,23 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Contacts from "./pages/Contacts";
+import Home from "./pages/Home";
+import LogIn from "./pages/LogIn";
+import SignUp from "./pages/SignUp";
+import { UserAuthContextProvider } from "./contexts/AuthContext";
+import ProtectedRoute from "./pages/ProtectedRoute";
+import ContactForm from "./pages/ContactForm";
+import Update from "./component/Update";
+import Search from "./pages/Search";
+import View from "./pages/View";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <UserAuthContextProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="contact" element={
+            <ProtectedRoute>
+              <Contacts />
+            </ProtectedRoute>
+          } />
+          <Route path="login" element={<LogIn />} />
+          <Route path="sign-up" element={<SignUp />} />
+          <Route path="contact-form" element={
+            <ProtectedRoute>
+              <ContactForm />
+            </ProtectedRoute>
+          } />
+          <Route path="update" element={
+            <ProtectedRoute>
+              <Update />
+            </ProtectedRoute>
+          } />
+          <Route path="search" element={
+            <ProtectedRoute>
+              <Search />
+            </ProtectedRoute>
+          } />
+          <Route path="view" element={
+            <ProtectedRoute>
+              <View />
+            </ProtectedRoute>
+          } />
+        </Routes>
+      </UserAuthContextProvider>
     </div>
   );
 }

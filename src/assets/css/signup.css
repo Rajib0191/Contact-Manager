@@ -1,0 +1,42 @@
+.signup__section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+.signup__header{
+    font-family: 'Poppins',sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    color: rgb(43, 39, 60);
+}
+.form-control{
+    box-shadow: inset 0 0 0 1px #c8c9ca !important;
+}
+.first__name,
+.last__name,
+.email__field,
+.password__field{
+    font-family: 'Oxygen',sans-serif;
+    height: 48px;
+    margin: 10px 0;
+}
+.create__account__button{
+    background-color: rgb(224, 7, 7) !important;
+    color: rgb(255, 255, 255) !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 8px 16px !important;
+}
+.connect__login{
+    margin-top: 10px;
+    color: rgb(110, 112, 114);
+}
+.connect__login span a{
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10px;
+}

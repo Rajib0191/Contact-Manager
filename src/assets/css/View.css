@@ -1,0 +1,9 @@
+.view__page__button{
+    background: #198754;
+    text-decoration: none;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    color: #ffffff !important;
+    line-height: 36px;
+}

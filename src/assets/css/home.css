@@ -1,0 +1,20 @@
+.home__page__section{
+    position: relative;
+    height: 100vh;
+}
+.home__page__header{
+    text-align: center;
+    margin-top: 100px;
+}
+.home__button{
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    height: 40px;
+    border: none;
+    background: orange;
+    color: #ffffff !important;
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 0 10px;
+}

@@ -1,0 +1,33 @@
+.contact__form__section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.contact__form__header{
+    font-family: 'Poppins',sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    color: rgb(43, 39, 60);
+}
+.fullname__field,
+.email__field,
+.mobile__field{
+    font-family: 'Oxygen',sans-serif;
+    height: 48px;
+    margin: 10px 0;
+}
+.submit__contact__button{
+    background-color: rgb(224, 7, 7) !important;
+    color: rgb(255, 255, 255) !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 8px 16px !important;
+}
+.add-contact-button{
+    padding-top: 10px;
+}
